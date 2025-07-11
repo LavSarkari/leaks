@@ -1,0 +1,64 @@
+name: Deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 📦 Checkout repo
+        uses: actions/checkout@v4
+
+      - name: 🧰 Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: 🧪 Install Jekyll & deps
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: ⚙️ Build site with Jekyll
+        run: bundle exec jekyll build
+
+      - name: 🔎 Run HTML Proofer (optional)
+        run: |
+          gem install html-proofer
+          bundle exec htmlproofer ./_site --disable-external
+        continue-on-error: true
+
+      - name: 📤 Upload build artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    name: 🚀 Deploy to GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 📥 Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
