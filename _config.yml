@@ -44,7 +44,7 @@ webmaster_verifications:
   bing:                  # if needed
 
 social_preview_image: /assets/img/preview.png
-avatar: assets\img\pfp.png
+avatar: https://github.com/LavSarkari/LavSarkari.github.io/blob/main/assets/img/pfp.png?raw=true
 
 # ───────────────
 # Blog Features
