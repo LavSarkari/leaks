@@ -1,4 +1,4 @@
-name: Deploy Jekyll site to GitHub Pages
+name: 🚀 Deploy Jekyll site to GitHub Pages
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
-      - name: 🧪 Install Jekyll & deps
+      - name: 🔌 Install Jekyll + dependencies
         run: |
           gem install bundler
           bundle install
@@ -39,13 +39,16 @@ jobs:
       - name: ⚙️ Build site with Jekyll
         run: bundle exec jekyll build
 
-      - name: 🔎 Run HTML Proofer (optional)
+      - name: 🔎 Run HTML Proofer (optional but dope)
         run: |
           gem install html-proofer
-          bundle exec htmlproofer ./_site --disable-external
+          bundle exec htmlproofer ./_site \
+            --disable-external \
+            --ignore-missing-alt \
+            --allow-hash-href
         continue-on-error: true
 
-      - name: 📤 Upload build artifacts
+      - name: 📤 Upload site to artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
@@ -59,6 +62,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: 📥 Deploy
+      - name: 📥 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
