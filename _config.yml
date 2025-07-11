@@ -1,5 +1,5 @@
 # ────────────────────────
-#        LavLeaks
+#       LavLeaks 🔐
 # ────────────────────────
 # bro idk how jekyll works tbh
 # just leaking my thoughts here
@@ -13,20 +13,19 @@ timezone: Asia/Kolkata
 title: LavLeaks
 tagline: My Leaked Thoughts :3
 description: >-
-  random hacks, weird ideas, cyber dumps, and real-time Ls. I learn in public, no filters.
+  random hacks, weird ideas, cyber dumps, and real-time Ls. I learn in public, no filters. also documenting my ₹50LPA journey from Lucknow with code, pain, and peanut butter.
 
 url: "https://LavSarkari.github.io"
 baseurl: ""
 
 # ───────────────
-# Socials
+# Author & Socials
 # ───────────────
-
 github:
   username: LavSarkari
 
 twitter:
-  username: LavSarkari
+  username: mrsarkarii
 
 social:
   name: Lav Sarkari
@@ -35,37 +34,52 @@ social:
     - https://twitter.com/mrsarkarii
     - https://github.com/LavSarkari
     - https://www.linkedin.com/in/lavsarkari
+    - https://lavsarkari.github.io/about/
+
+avatar: https://raw.githubusercontent.com/LavSarkari/LavSarkari.github.io/main/assets/img/pfp.png
+
+social_preview_image: /assets/img/preview.png
 
 # ───────────────
 # SEO
 # ───────────────
 webmaster_verifications:
-  google:                # add google site verification here
-  bing:                  # if needed
+  google:        # Add Google verification token here
+  bing:          # Optional
 
-social_preview_image: /assets/img/preview.png
-avatar: https://github.com/LavSarkari/LavSarkari.github.io/blob/main/assets/img/pfp.png?raw=true
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
 
 # ───────────────
-# Blog Features
+# UI/UX
 # ───────────────
 paginate: 10
 toc: true
-theme_mode:             # user can toggle dark/light
+theme_mode:     # auto, let user toggle
 
+# ───────────────
+# Comments (Giscus FTW)
+# ───────────────
 comments:
   provider: giscus
   giscus:
     repo: LavSarkari/LavSarkari.github.io
-    repo_id:               # put from giscus.app
+    repo_id: MDEwOlJlcG9zaXRvcnkxNzQ0NjgxODc=         # replace with actual if missing
     category: General
-    category_id:           # put from giscus.app
+    category_id: DIC_kwDOCkc2sM4CcLjd                 # replace with actual if missing
     mapping: pathname
     input_position: bottom
+    lang: en
     reactions_enabled: 1
 
 # ───────────────
-# Analytics (free ftw)
+# Analytics (no Google bs)
 # ───────────────
 analytics:
   goatcounter:
@@ -75,16 +89,20 @@ pageviews:
   provider: goatcounter
 
 # ───────────────
-# PWA - yes I want offline hacker diary
+# PWA (offline hacker journal)
 # ───────────────
 pwa:
   enabled: true
   cache:
     enabled: true
+    deny_paths: []
 
 # ───────────────
-# Internals
+# Internal Engine Stuff
 # ───────────────
+sass:
+  style: compressed
+
 compress_html:
   clippings: all
   comments: all
@@ -93,9 +111,6 @@ compress_html:
   blanklines: false
   ignore:
     envs: [development]
-
-sass:
-  style: compressed
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
@@ -133,6 +148,9 @@ defaults:
       layout: page
       permalink: /:title/
 
+# ───────────────
+# Clean Build
+# ───────────────
 exclude:
   - "*.gem"
   - "*.gemspec"
@@ -143,12 +161,3 @@ exclude:
   - purgecss.js
   - "*.config.js"
   - "package*.json"
-
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
