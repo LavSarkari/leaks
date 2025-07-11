@@ -38,6 +38,5 @@ lavsarkari@github
 
 
 <img src="https://miro.medium.com/v2/resize:fit:1358/1*aniyNTcHORbvDiLGUzJSsQ.gif" alt="typing hacker aesthetic gif"/>
-</div>
 <div align="center"> <a href="https://discord.gg/rFGc7P4V6a"> <img src="https://img.shields.io/discord/1322929717883568199?label=Join%20my%20Discord&logo=discord&style=for-the-badge" alt="Join my Discord server badge"/> </a> </div> <br> 
 
