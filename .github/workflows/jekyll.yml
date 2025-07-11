@@ -45,7 +45,8 @@ jobs:
           bundle exec htmlproofer ./_site \
             --disable-external \
             --ignore-missing-alt \
-            --allow-hash-href
+            --allow-hash-href  \
+            --enforce-https
         continue-on-error: true
 
       - name: 📤 Upload site to artifact
