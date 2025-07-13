@@ -66,36 +66,36 @@ theme_mode:     # auto, let user toggle
 # ───────────────
 # Comments (Giscus FTW)
 # ───────────────
-comments:
-  provider: giscus
-  giscus:
-    repo: LavSarkari/LavSarkari.github.io
-    repo_id: MDEwOlJlcG9zaXRvcnkxNzQ0NjgxODc=         # replace with actual if missing
-    category: General
-    category_id: DIC_kwDOCkc2sM4CcLjd                 # replace with actual if missing
-    mapping: pathname
-    input_position: bottom
-    lang: en
-    reactions_enabled: 1
+# comments:
+#   provider: giscus
+#   giscus:
+#     repo: LavSarkari/LavSarkari.github.io
+#     repo_id: MDEwOlJlcG9zaXRvcnkxNzQ0NjgxODc=         # replace with actual if missing
+#     category: General
+#     category_id: DIC_kwDOCkc2sM4CcLjd                 # replace with actual if missing
+#     mapping: pathname
+#     input_position: bottom
+#     lang: en
+#     reactions_enabled: 1
 
 # ───────────────
 # Analytics (no Google bs)
 # ───────────────
-analytics:
-  goatcounter:
-    id: lavleaks.goatcounter.com
+# analytics:
+#   goatcounter:
+#     id: lavleaks.goatcounter.com
 
-pageviews:
-  provider: goatcounter
+# pageviews:
+#   provider: goatcounter
 
 # ───────────────
 # PWA (offline hacker journal)
 # ───────────────
-pwa:
-  enabled: true
-  cache:
-    enabled: true
-    deny_paths: []
+# pwa:
+#   enabled: true
+#   cache:
+#     enabled: true
+#     deny_paths: []
 
 # ───────────────
 # Internal Engine Stuff
