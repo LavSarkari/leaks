@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: 📦 Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history for accurate timestamps and Jekyll builds
 
       - name: 🧰 Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -37,19 +39,19 @@ jobs:
           bundle install
 
       - name: ⚙️ Build site with Jekyll
-        run: bundle exec jekyll build
+        run: JEKYLL_ENV=production bundle exec jekyll build
 
-      - name: 🔎 Run HTML Proofer (optional but dope)
+      - name: 🔎 (Optional) Validate site with HTML Proofer
         run: |
           gem install html-proofer
           bundle exec htmlproofer ./_site \
             --disable-external \
             --ignore-missing-alt \
-            --allow-hash-href  \
+            --allow-hash-href \
             --enforce-https
         continue-on-error: true
 
-      - name: 📤 Upload site to artifact
+      - name: 📤 Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
