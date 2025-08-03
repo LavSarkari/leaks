@@ -9,7 +9,7 @@
 
 ## 🧠 what's this?
 
-this repo powers [`lavsarkari.github.io`](https://lavsarkari.github.io), a **minimal Jekyll site using [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)** but stripped down to fit me:
+this repo powers [`leaks.lavsarkari.me`](https://leaks.lavsarkari.me), a **minimal Jekyll site using [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)** but stripped down to fit me:
 - i write in public
 - i don’t pretend to be a pro
 - this is my digital brain leak.  
