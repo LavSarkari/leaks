@@ -1,6 +1,6 @@
 ---
 title: 'lookup: testing my enumeration skills on this boot-to-root machine'
-date: 2025-11-22
+date: 2025-10-22
 categories:
   - TryHackMe
   - CTF
