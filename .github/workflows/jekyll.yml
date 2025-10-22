@@ -39,7 +39,10 @@ jobs:
           bundle install
 
       - name: ⚙️ Build site with Jekyll
-        run: JEKYLL_ENV=production bundle exec jekyll build
+        run: |
+          bundle exec jekyll clean
+          JEKYLL_ENV=production bundle exec jekyll build --trace --strict_front_matter
+
 
       - name: 🔎 (Optional) Validate site with HTML Proofer
         run: |
