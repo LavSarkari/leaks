@@ -1,14 +1,27 @@
 ---
-title: "lookup: testing my enumeration skills on this boot-to-root machine"
+title: 'lookup: testing my enumeration skills on this boot-to-root machine'
 date: 2025-11-22
-categories: [TryHackMe, CTF]
-tags: [ctf, linux, terminal, nmap, python, hydra, beginner, hands-on, easy, metasploigt]
+categories:
+  - TryHackMe
+  - CTF
+tags:
+  - ctf
+  - linux
+  - terminal
+  - nmap
+  - python
+  - hydra
+  - beginner
+  - hands-on
+  - easy
+  - metasploit
 comments: false
 toc: true
 ---
 
+
 > TryHackMe Machine: [lookup](https://tryhackme.com/room/lookup)
-> was on a break cus of clg nd shits.. and now after so long e-starting my system :>
+> was on a break cus of clg nd shits.. and now after so long re-starting my system :>
 
 **about the room:** it’s all bout recon, scanning, and enumeration , find hidden services and subdomains, then abuse the ones that look vulnerable.
 
