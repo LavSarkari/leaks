@@ -5,7 +5,7 @@ categories: [TryHackMe, CTF]
 tags: [ctf, linux, terminal, nmap, python, hydra, beginner, hands-on, easy, metasploigt]
 comments: false
 toc: true
----------
+---
 
 > TryHackMe Machine: [lookup](https://tryhackme.com/room/lookup)
 > was on a break cus of clg nd shits.. and now after so long e-starting my system :>
