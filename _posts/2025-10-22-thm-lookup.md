@@ -206,3 +206,5 @@ ssh -i id_rsa root@lookup.thm
 * elFinder versions are clickable in UI (look for `?` or the footer) , always check the UI for version strings.
 * when a suid binary uses plain `id` or other common utils, PATH hijack is your friend.
 
+
+> ngl im hard time pushing this walkthorugh and like its around my 8th retry ;-; kms. (using github pages if u guys havnt noticed it yet)
