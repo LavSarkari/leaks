@@ -1,25 +1,22 @@
 ---
-title: 'lookup: testing my enumeration skills on this boot-to-root machine'
-date: 2025-10-22
+title: 'TryHackMe Lookup Walkthrough: Recon, Exploitation & Privilege Escalation'
+description: >-
+  Detailed walkthrough of the TryHackMe Lookup machine, covering recon,
+  username/password enumeration, elFinder exploitation, SUID binary abuse, and
+  PATH hijacking for root.
 categories:
   - TryHackMe
   - CTF
 tags:
-  - ctf
-  - linux
-  - terminal
-  - nmap
-  - python
-  - hydra
-  - beginner
-  - hands-on
-  - easy
-  - metasploit
-comments: false
-toc: true
+  - TryHackMe
+  - Lookup
+  - Reconnaissance
+  - Privilege Escalation
+  - elFinder Exploit
+date: '2025-10-22T06:30:00.000Z'
+published: true
+layout: post
 ---
-
-
 > TryHackMe Machine: [lookup](https://tryhackme.com/room/lookup)
 > was on a break cus of clg nd shits.. and now after so long re-starting my system :>
 
@@ -206,5 +203,3 @@ ssh -i id_rsa root@lookup.thm
 * elFinder versions are clickable in UI (look for `?` or the footer) , always check the UI for version strings.
 * when a suid binary uses plain `id` or other common utils, PATH hijack is your friend.
 
-
-> ngl im hard time pushing this walkthorugh and like its around my 8th retry ;-; kms. (using github pages if u guys havnt noticed it yet)
