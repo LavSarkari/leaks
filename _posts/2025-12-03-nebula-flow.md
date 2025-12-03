@@ -19,55 +19,54 @@ published: true
 layout: post
 ---
 
-> project: **Nebula Flow**  
-> honestly… AI today is doing things we aren't even fully skilled for yet: the only missing skill is knowing *how* to talk to it.  
-> this whole thing… built by prompting. not hand-coding. wild times :>
-> demo at: https://particals.lavsarkari.me/
-> codes at: https://github.com/LavSarkari/PARTICELS-
+> project: **Nebula Flow** <br>
+> honestly… AI today is doing things we aren't even fully skilled for yet: the only missing skill is knowing *how* to talk to it.  <br>
+> this whole thing… built by prompting. not hand-coding. wild times :><br>
+> demo at: [https://particals.lavsarkari.me/](https://particals.lavsarkari.me/) <br>
+> codes at: [https://github.com/LavSarkari/PARTICELS-](https://github.com/LavSarkari/PARTICELS-) <br>
 
 ---
 
 ## before anything: what i actually wanted
 
-i had a picture in my head: a **floating 3D nebula** moving like soft cosmic smoke…  
-and when you move your hand in front of the camera:
+i had a picture in my head: a **floating 3D nebula** moving like soft cosmic smoke…  <br>
+and when you move your hand in front of the camera:<br>
 
-* open palm → the nebula **pushes away**  
-* closed fist → the nebula **collapses into a black hole**  
-* two hands → you can **stretch** the galaxy apart  
+* open palm → the nebula **pushes away**  <br>
+* closed fist → the nebula **collapses into a black hole**  <br>
+* two hands → you can **stretch** the galaxy apart  <br>
 
-and then a small input box where i type:
+and then a small input box where i type:<br>
 
-> “matrix rain”  
-> “cotton-candy nebula”  
-> “golden fireflies vortex”
+> “matrix rain”  <br>
+> “cotton-candy nebula”  <br>
+> “golden fireflies vortex”<br>
 
-and **Gemini** redesigns the entire particle system on the fly.
+and **Gemini** redesigns the entire particle system on the fly.<br>
 
-i didn’t want to write a giant three.js shader pipeline manually.
+i didn’t want to write a giant three.js shader pipeline manually.<br>
 
-i wanted a **prompt** that makes AI build everything start-to-finish.
+i wanted a **prompt** that makes AI build everything start-to-finish.<br>
 
 ---
 
-## step 1: accepting the truth: AI is literally our senior dev now
+## step 1: accepting the truth: AI is literally our senior dev now<br>
 
-i stopped pretending i’ll hand-craft a thousand-line project.
+i stopped pretending i’ll hand-craft a thousand-line project.<br>
 
-i opened Google AI Studio, sat back, and treated it like hiring a pro:
+i opened Google AI Studio, sat back, and treated it like hiring a pro:<br>
 
-> “build my whole app, file by file, ready for Vercel.”
-
-once you start prompting like you're giving requirements to a real dev,  
-AI stops being a toy and starts becoming a **full-stack teammate**.
+> “build my whole app, file by file, ready for Vercel.”<br>
+once you start prompting like you're giving requirements to a real dev,  <br>
+AI stops being a toy and starts becoming a **full-stack teammate**.<br>
 
 ---
 
 ## step 2: the master prompt: the moment everything was born
 
-i wrote *one* big instruction block that basically shaped the entire universe.
+i wrote *one* big instruction block that basically shaped the entire universe.<br>
 
-this is the exact thing i fed into AI Studio:
+this is the exact thing i fed into AI Studio:<br>
 
 ```
 Create a complete, production-ready React application called "Nebula Flow" using Vite, TypeScript, Three.js (React Three Fiber), and Tailwind CSS.
@@ -94,49 +93,49 @@ Include a metadata.json requesting camera permissions.
 ```
 
 
-the crazy part?  
-**AI understood every part of that like a senior engineer.**
+the crazy part?  <br>
+**AI understood every part of that like a senior engineer.**<br>
 
-it created:
+it created:<br>
 
-* folders  
-* files  
-* structure  
-* shaders  
-* architecture decisions  
-* state management  
-* UI controls  
-* permission files  
-* deployment-safe code  
+* folders  <br>
+* files  <br>
+* structure  <br>
+* shaders  <br>
+* architecture decisions  <br>
+* state management  <br>
+* UI controls  <br>
+* permission files  <br>
+* deployment-safe code  <br>
 
-all because the prompt was crystal.
+all because the prompt was crystal.<br>
 
-that's the gap most people feel:  
-they know AI is powerful but don’t know what words make it *unleash*.
+that's the gap most people feel:  <br>
+they know AI is powerful but don’t know what words make it *unleash*.<br>
 
 ---
 
 ## step 3: the AI magic moment: watching it assemble a universe
 
-AI Studio didn’t behave like a “text generator”.  
-it behaved like an engineer who understood:
+AI Studio didn’t behave like a “text generator”.  <br>
+it behaved like an engineer who understood:<br>
 
-* how React Three Fiber works  
-* how to inject hand position into the animation loop  
-* how MediaPipe detects gestures  
-* how to design a glass UI panel  
-* how to structure a Vite + TS project  
-* how to make Gemini return structured JSON  
+* how React Three Fiber works  <br>
+* how to inject hand position into the animation loop  <br>
+* how MediaPipe detects gestures  <br>
+* how to design a glass UI panel  <br>
+* how to structure a Vite + TS project  <br>
+* how to make Gemini return structured JSON  <br>
 * how to keep it WebGL2-compatible  
+<br>
+the more precise I went with the prompt, the more it exploded into solid output.<br>
 
-the more precise I went with the prompt, the more it exploded into solid output.
+that’s when it hit me:<br>
 
-that’s when it hit me:
-
-> we don’t lack skills.  
-> we lack vocabulary to command these models.  
-> tech is no longer about “knowing everything”:  
-> it’s about describing what you want so precisely that AI executes it like code.
+> we don’t lack skills.  <br>
+> we lack vocabulary to command these models.  <br>
+> tech is no longer about “knowing everything”:  <br>
+> it’s about describing what you want so precisely that AI executes it like code.<br>
 
 ---
 
